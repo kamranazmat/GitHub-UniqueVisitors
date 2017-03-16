@@ -1,8 +1,22 @@
+import sys
 from github import Github
 
-# First create a Github instance:
-g = Github("kamranazmat", "")
+try:
+    username = sys.argv[1]
+    password = sys.argv[2]
+except:
+    print "usage: python conection.py username password"
+    sys.exit(1)
 
-# Then play with your Github objects:
-for repo in g.get_user().get_repos():
+try:
+    g = Github(username, password)
+    repos = g.get_user().get_repos()
+    for repo in repos:
+        pass
+except:
+    print "Login failed wrong user credentials"
+    sys.exit(1)
+
+# get all repo
+for repo in repos:
     print repo.name

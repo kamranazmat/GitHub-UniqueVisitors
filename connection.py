@@ -17,6 +17,7 @@ except:
     print "Login failed wrong user credentials"
     sys.exit(1)
 
-# get all repo
+# https://api.github.com/repos/kamranazmat/UCD-Big-Data-Programming/traffic/views
+
 for repo in repos:
     print repo.name

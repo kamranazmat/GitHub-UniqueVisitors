@@ -3,7 +3,7 @@ from StringIO import StringIO
 
 buffer = StringIO()
 c = pycurl.Curl()
-c.setopt(c.URL, 'https://api.github.com/users/kamranazmat')
+c.setopt(c.URL, 'https://api.github.com/users')
 
 c.perform()
 c.close()

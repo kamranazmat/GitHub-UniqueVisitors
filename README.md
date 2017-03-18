@@ -10,7 +10,7 @@ This script requires [Python 2.7](https://www.python.org/downloads/) to run.
 Install the relevant pakages.
 
 ```sh
-$ python github_uniqueVisitors.py <username> <password>
+$ python github_uniqueVisitors.py <username>
 ```
 ### Packages
 
